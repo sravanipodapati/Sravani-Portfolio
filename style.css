@@ -489,7 +489,7 @@ span {
 
     /* Hide the nav menu by default on mobile */
     nav {
-        display: block;
+        display: none;
         position: fixed;
         top: 0;
         right: 0;

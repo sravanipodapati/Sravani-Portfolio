@@ -470,3 +470,34 @@ span {
         max-width: 90%; /* Increase the maximum width */
     }
 }
+/* Show hamburger icon on smaller screens */
+@media (max-width: 995px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none; /* Hide the nav menu by default on mobile */
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 70%;
+        background-color: #161616;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 100; /* Ensure it overlays the content */
+        padding: 2rem 1rem;
+        transition: all 0.3s ease;
+    }
+
+    nav a {
+        font-size: 2rem;
+        margin: 1.5rem 0;
+    }
+
+    nav.active {
+        display: flex; /* Display flex when active */
+    }
+}

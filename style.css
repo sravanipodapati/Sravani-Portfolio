@@ -38,6 +38,9 @@ header {
 }
 
 .logo {
+    position: fixed;         /* Keeps the logo fixed at the top left of the viewport */
+    top: 10px;               /* Adds some spacing from the top */
+    left: 10px;              /* Adds some spacing from the left */
     font-size: 3rem;
     color: #b74b4b;
     font-weight: 800;

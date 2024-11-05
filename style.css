@@ -491,6 +491,15 @@ span {
         padding: 2rem 1rem;
         transition: all 0.3s ease;
     }
+    /* Hamburger Icon Styling */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 101; /* Ensure it stays above other elements */
+}
 
     nav a {
         font-size: 2rem;

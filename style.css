@@ -345,6 +345,16 @@ span{
     color: #b74b4b;
     box-shadow: 0 0 25px #b74b4b;
 }
+
+.project-message {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #161616; /* Same background color as project items */
+    border-radius: 0.5rem;
+    border-left: 5px solid #b74b4b; /* Same color as project item border */
+    font-size: 1.6rem;
+    color: white; /* Ensure text is readable */
+}
 /* Skills Section Styling */
 .skills {
     min-height: 100vh;

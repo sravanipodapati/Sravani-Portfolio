@@ -19,6 +19,9 @@
             <a href="projects.html" >Projects</a>
             <a href="contact.html" >Contact</a>
         </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger icon (three lines) -->
+        </div>
     </header>
     <section class="home">
         <div class="home-img">
@@ -36,6 +39,11 @@
     <footer>
         <p>© 2024 Sravani Podapati</p>
     </footer>
-    
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

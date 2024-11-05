@@ -470,14 +470,26 @@ span {
         max-width: 90%; /* Increase the maximum width */
     }
 }
-/* Show hamburger icon on smaller screens */
+/* Hamburger Icon Styling */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 101; /* Ensure it stays above other elements */
+}
+
+/* Mobile Navigation Styling */
 @media (max-width: 995px) {
+    /* Show hamburger icon only on smaller screens */
     .hamburger {
         display: block;
     }
 
+    /* Hide the nav menu by default on mobile */
     nav {
-        display: none; /* Hide the nav menu by default on mobile */
+        display: none;
         position: fixed;
         top: 0;
         right: 0;
@@ -491,21 +503,14 @@ span {
         padding: 2rem 1rem;
         transition: all 0.3s ease;
     }
-    /* Hamburger Icon Styling */
-.hamburger {
-    display: none; /* Hidden by default */
-    font-size: 3rem;
-    color: white;
-    cursor: pointer;
-    position: relative;
-    z-index: 101; /* Ensure it stays above other elements */
-}
 
+    /* Nav links styling within mobile menu */
     nav a {
         font-size: 2rem;
         margin: 1.5rem 0;
     }
 
+    /* Display nav when 'active' class is toggled on */
     nav.active {
         display: flex; /* Display flex when active */
     }

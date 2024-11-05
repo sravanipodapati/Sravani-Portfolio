@@ -467,34 +467,21 @@ span {
 .contact-form button:hover {
     background-color: #a64a4a;
 }
-
-/* Media Queries for Better Responsiveness */
-@media (max-width: 768px) {
-    .home-content h3 {
-        font-size: 2.5rem; /* Smaller h3 font size */
-    }
-
-    .home .home-content h1 {
-        font-size: 4rem; /* Smaller h1 font size */
-    }
-
-    .education-item, .project-item, .detail-item {
-        width: 100%; /* Full width for items */
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        max-width: 90%; /* Increase the maximum width */
-    }
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
+
 /* Hamburger Icon Styling */
 .hamburger {
     display: none; /* Hidden by default */
     font-size: 3rem;
     color: white;
     cursor: pointer;
-    position: relative;
-    z-index: 101; /* Ensure it stays above other elements */
+    z-index: 101;
 }
 
 /* Mobile Navigation Styling */
@@ -516,7 +503,7 @@ span {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        z-index: 100; /* Ensure it overlays the content */
+        z-index: 100;
         padding: 2rem 1rem;
         transition: all 0.3s ease;
     }
@@ -525,10 +512,34 @@ span {
     nav a {
         font-size: 2rem;
         margin: 1.5rem 0;
+        color: white;
+        text-align: center;
     }
 
     /* Display nav when 'active' class is toggled on */
     nav.active {
-        display: flex; /* Display flex when active */
+        display: flex;
     }
 }
+
+/* Adjusted media query for smaller screens */
+@media (max-width: 768px) {
+    .home-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .education-item, .project-item, .detail-item {
+        width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        max-width: 90%;
+    }
+}
+
+

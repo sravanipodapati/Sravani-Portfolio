@@ -159,6 +159,7 @@ section {
     justify-content: center;
     align-items: center;
     gap: 4rem;
+    padding-top: 12rem;
     flex-direction: column;
     background-color: black;
 }
@@ -175,6 +176,7 @@ span {
 
 .home-content h3 {
     font-size: 3rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
     font-weight: 700;
 }
@@ -185,6 +187,7 @@ span {
 
 .home-img {
     border-radius: 50%;
+    margin-top: 2rem
 }
 
 .home-img img {

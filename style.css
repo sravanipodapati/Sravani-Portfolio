@@ -146,25 +146,22 @@ span {
     font-size: 1.6rem;
 }
 
-
-
 .home-img {
     border-radius: 50%;
 }
 
 .home-img img {
     position: relative;
-    width: 40vw; /* Adjusted width for responsiveness */
-    max-width: 400px; /* Optional: limit maximum width */
+    width: 40vw; /* Responsive width */
+    max-width: 400px; /* Limit maximum width */
     border-radius: 50%;
-    box-shadow: 0 0 25px solid #b74b4b;
+    box-shadow: 0 0 25px #b74b4b; /* Shadow effect */
     cursor: pointer;
-    transition: 0.2s linear;
+    transition: transform 0.2s linear;
 }
 
 .home-img img:hover {
-    font-size: 1.8rem;
-    font-weight: 500;
+    transform: scale(1.05); /* Slightly increase size on hover */
 }
 
 .social-icons a {

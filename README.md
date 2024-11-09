@@ -14,6 +14,7 @@ This portfolio website showcases the personal projects, skills, and education of
 2. Tools:
 
 - Git and GitHub Actions (for version control and CI/CD pipelines).
+- Visual studio code.
 
 **Website Structure:**
 

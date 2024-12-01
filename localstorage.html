@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Save Information to LocalStorage</h1>
+    </header>
+
+    <section>
+        <form id="userInfoForm">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <button type="submit">Save Information</button>
+            </div>
+        </form>
+    </section>
+
+    <section>
+        <h2>Saved Information</h2>
+        <div id="savedInfo">
+            <!-- Saved information will be displayed here -->
+        </div>
+    </section>
+
+    <script src="localstorage.js"></script>
+
+</body>
+</html>

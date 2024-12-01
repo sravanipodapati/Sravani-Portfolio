@@ -579,5 +579,151 @@ span {
         max-width: 90%;
     }
 }
+/* LocalStorage Page Styles */
+
+/* General Reset and Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #161616;
+    color: white;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+    padding: 3rem 5%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    color: #b74b4b;
+    text-align: center;
+}
+
+/* Form Styling */
+section {
+    padding: 8rem 5% 2rem;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    background-color: #161616;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+form div {
+    margin-bottom: 1.5rem;
+}
+
+form label {
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+form input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    background-color: #161616;
+    color: white;
+    border: 1px solid #b74b4b;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #b74b4b;
+}
+
+form button {
+    background-color: #b74b4b;
+    color: black;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: black;
+    color: #b74b4b;
+    box-shadow: 0 0 15px #b74b4b;
+}
+
+/* Saved Information Section */
+#savedInfo {
+    background-color: #161616;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 2rem; /* Slightly increased margin to give space */
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    color: white;
+    display: block; /* Ensure it's not hidden */
+}
+
+#savedInfo p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem; /* Adding a little space between each entry */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 1.5rem;
+    }
+
+    form button {
+        font-size: 1.4rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    #savedInfo p {
+        font-size: 1.4rem;
+    }
+}
+
+
 
 

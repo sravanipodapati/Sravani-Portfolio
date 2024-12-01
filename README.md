@@ -50,6 +50,14 @@ The website consists of the following main sections:
 - A form for potential employers or collaborators to reach out to the developer.
 - Contains social media links and personal contact information like email and phone.
 
+7. Local storage:
+
+- Users can save their name and email to the browser’s localStorage. This data persists even after refreshing the page.
+- All the saved information is shown on the page.
+- Added Javascript functionality to save data using localStorage which dynamically displays saved data below the form.
+
+
+
 **Functionality:**
 
 - Responsive Design: The website is designed to be mobile-friendly with a hamburger menu for small screens.
